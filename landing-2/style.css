@@ -1,0 +1,122 @@
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif,Arial, Helvetica;
+}
+
+header {
+    background-image:linear-gradient(90deg, rgba(2,0,36,0.5746673669467788) 0%, rgba(2,0,36,0.5578606442577031) 100% ), url(hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position:center;
+
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 50px;
+    ;
+}
+
+ul li {
+    display: inline-block;
+    margin-left:1rem ;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid white transparent;
+    transition: 0.5s ease;
+}
+
+ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+ul li.active a {
+    background-color: white;
+    color: black;
+}
+
+.logo img{
+
+    float: left;
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+
+.main {
+
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title   {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 60px;
+}
+
+.buttons {
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+
+button {
+    width: 120px;
+    height: 35px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+    margin: 0 10px;
+    transition: 0.4s ease;
+    font-weight: bold;
+    position: relative;
+}
+
+span {
+    position: absolute;
+    width:0 ;
+    height: 100%;
+    background-color:white ;
+    text-align: center;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    transition: 0.4s ease;
+    font-weight: bold;
+    z-index: -1;
+}
+
+button:hover span {
+    width: 100%
+}
+
+button:hover {
+    color: black;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,366 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    max-width: 12000px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0px;
+
+}
+
+header {
+    height: 100vh;
+    background-image: linear-gradient(to top, hsla(180, 63%, 50%, 0.575) 0%, hsla(267, 86%, 22%, 0.596) 100%),url(/assets/img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+
+.head {
+
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+.hamburguer{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background-color: white;
+    width: 45px;
+    height: 45px;
+    cursor:pointer ;
+    padding: 8px;
+    border-radius: 9px;
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.51);
+    -webkit-box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.51);
+    -moz-box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.51);
+}
+
+
+.menu-navigation {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 25vw ;
+    height: 100%;
+    background-image: linear-gradient(to top, #88d3ce 0%, #6e45e2 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly ;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+    transform: translate(110%);
+}
+
+.spread {
+    transform: translate(0);
+}
+
+.menu-navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+.title{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.copy {
+    font-weight: 300px;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* OUR SERVICES*/
+
+.subtitle {
+    text-align: center;
+    font-weight: 300;
+    color: #1e0686c5;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.container-service {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container-service img {
+    width: 40%;
+
+}
+
+.checklist-service {
+    width: 45%;
+}
+
+.service {
+    margin-bottom: 20px;
+
+}
+
+.n-service {
+    margin-bottom: 7px;
+    color: #1e0686c5;
+}
+
+.number {
+    display: inline-block;
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    width: 30px;
+    height: 30px;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 10px;
+}
+
+.gallery {
+    background: hsl(257, 41%, 97%);
+}
+
+.container-gallery {
+    display: flex;;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image-gallery {
+    width: 25%;
+    display: block;
+    margin-bottom: 30px;
+    box-shadow: -2px 2px 7px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 2px 7px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 2px 7px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+    border-radius: 9px;
+    object-fit: cover;
+}
+
+.image-gallery:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.03);
+    
+}
+
+.image-light {
+
+    position: fixed;
+    background: #03000cb0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(110%);
+    transition: transform .2s ease-in-out;
+}
+
+.add-image {
+    width: 60%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+    object-fit: cover;
+}
+
+.showLight {
+    transform: translate(0);
+}
+
+.close {
+
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.showImage {
+    transform: scale(1);
+}
+
+.experts {
+    display: flex;
+    justify-content:space-evenly ;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.cont-expert {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cont-expert img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.n-expert {
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 400;
+} 
+
+/* Footer */
+
+footer {
+    background: #432b74;
+    padding-bottom: 0.1px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.contact-us {
+    width:40% ;
+    color: white;
+}
+
+.brand {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.brand+p{
+    font-weight: 500;
+}
+
+.socia-media {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon {
+    display: inline-block;
+    margin-left:20px ;
+    width: 60px;
+    height: 60px;
+    border: 1px solid  white;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+}
+
+.social-media-icon:hover {
+    background-color: white;
+    color: #432b74;
+}
+
+.social-media-icon i {
+    font-size: 30px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.line {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background-color: white;
+    margin-bottom: 60px;
+}
+@media screen and (max-width:720px) {
+    
+    .menu-navigation {
+        width: 30vw;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .container-service img {
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    .checklist-service{
+        width: 80%;
+    }
+
+    .service {
+        margin-bottom: 40px;
+    }
+
+    .add-image {
+        width: 80%;
+    }
+
+    .image-gallery {
+        width: 42%;
+    }
+
+    .cont-expert {
+        width: 75%;
+    }
+
+    .footer-content {
+        justify-content: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .contact-us {
+        text-align: center;
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width:480px) { 
+
+ .hamburguer {
+    top: 15px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+
+}
+
+.menu-navigation {
+    width: 45vw;
+}
+
+.image-gallery {
+    width: 80%;
+}
+
+}
